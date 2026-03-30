@@ -28,11 +28,13 @@ The original repository:
 	sudo apt install libgtest-dev
 	sudo apt install libva-dev libx11-dev
 	sudo apt install qml-module-qtmultimedia
+
+# Compile and install cctv-viewer
 	
-	git clone --recurse-submodules https://github.com/iEvgeny/cctv-viewer.git
-	
+	cd ~
+	mkdir opt && cd opt
+	git clone --recurse-submodules https://github.com/sviktor75/cctv-viewer.git
 	cd cctv-viewer
-	
 	mkdir build && cd build
 	
 	cmake ..
@@ -40,3 +42,19 @@ The original repository:
 	cmake -DENABLE_TESTS=OFF ..
 	
 	make -j$(nproc)
+	
+	sudo cp cctv-viewer /usr/bin/
+	
+
+# Start the program
+CLI:
+
+	cctv-viewer
+Desktop:
+	
+	cp cctv-viewer.desktop ~/Desktop
+	# Start by the new ikon from desktop
+	
+
+
+	
