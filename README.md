@@ -42,7 +42,8 @@ The original repository:
 	cmake -DENABLE_TESTS=OFF ..
 	
 	make -j$(nproc)
-	
+
+# Copy the binary to be accessible from "anywhere"
 	sudo cp cctv-viewer /usr/bin/
 	
 
