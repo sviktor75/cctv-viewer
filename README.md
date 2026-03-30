@@ -8,7 +8,11 @@
 CCTV Viewer - a simple application for simultaneously viewing multiple video streams. Designed for high performance and low latency.
 Based on ffmpeg.
 
-To clone this repository be sure to use the following command:
+To clone this repository use the following command:
+
+	git clone --recurse-submodules https://github.com/sviktor75/cctv-viewer.git
+
+The original repository:
 
 	git clone --recurse-submodules https://github.com/iEvgeny/cctv-viewer.git
 
