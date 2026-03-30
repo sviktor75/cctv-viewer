@@ -32,6 +32,7 @@ To clone this repository be sure to use the following command:
 	mkdir build && cd build
 	
 	cmake ..
-#cmake -DENABLE_TESTS=OFF ..
-
-make -j$(nproc)
+	or
+	cmake -DENABLE_TESTS=OFF ..
+	
+	make -j$(nproc)
