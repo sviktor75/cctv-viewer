@@ -11,3 +11,27 @@ Based on ffmpeg.
 To clone this repository be sure to use the following command:
 
 	git clone --recurse-submodules https://github.com/iEvgeny/cctv-viewer.git
+
+# Install requirements for Linux Mint 22.3 Mate
+
+	sudo apt update
+	sudo apt install git build-essential cmake qtbase5-dev qtdeclarative5-dev \
+	qtmultimedia5-dev qml-module-qtquick-controls2 qml-module-qtquick-layouts \
+	libavformat-dev libavcodec-dev libavutil-dev libswscale-dev libavdevice-dev
+	
+	sudo apt install qttools5-dev-tools
+	sudo apt install qttools5-dev
+	sudo apt install libgtest-dev
+	sudo apt install libva-dev libx11-dev
+	sudo apt install qml-module-qtmultimedia
+	
+	git clone --recurse-submodules https://github.com/iEvgeny/cctv-viewer.git
+	
+	cd cctv-viewer
+	
+	mkdir build && cd build
+	
+	cmake ..
+#cmake -DENABLE_TESTS=OFF ..
+
+make -j$(nproc)
