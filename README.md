@@ -28,6 +28,7 @@ The original repository:
 	sudo apt install libgtest-dev
 	sudo apt install libva-dev libx11-dev
 	sudo apt install qml-module-qtmultimedia
+	sudo apt install qml-module-qtquick-dialogs qml-module-qt-labs-settings
 
 # Compile and install cctv-viewer
 	
